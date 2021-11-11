@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Checkout example · Bootstrap v5.0</title>
+
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/sidebars.css">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row min-vh-100 flex-column flex-md-row">
+      <div class="d-flex flex-column p-3 bg-light" style="width: 300px;">
+        <a href="#" class="avatar d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" /></svg>
+          <img src="/img/images.jpg" alt="">
+          <span class="fs-4">Cursos de Informática</span>
+        </a>
+        <hr>
+        <br>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link link-dark" aria-current="page">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#home" /></svg>
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link active">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#speedometer2" /></svg>
+              Registro
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#table" /></svg>
+              Cursos
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#people-circle" /></svg>
+              Contacto
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+            id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <main class="col px-0 flex-grow-1">
+        <div class="container py-3">
+          <div class="row">
+            <br>
+            <br>
+          </div>
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Cursos disponibles</span>
+                <span class="badge bg-primary rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Borland C++ Nivel 1</h6>
+                    <small class="text-muted">Ver detalles</small>
+                  </div>
+                  <span class="text-muted">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Second product</h6>
+                    <small class="text-muted">Ver detalles</small>
+                  </div>
+                  <span class="text-muted">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Third item</h6>
+                    <small class="text-muted">Ver detalles</small>
+                  </div>
+                  <span class="text-muted">$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                  <div class="text-success">
+                    <h6 class="my-0">Promo code</h6>
+                    <small>EXAMPLECODE</small>
+                  </div>
+                  <span class="text-success">−$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (USD)</span>
+                  <strong>$20</strong>
+                </li>
+              </ul>
+
+              <form class="card p-2">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Promo code">
+                  <button type="submit" class="btn btn-secondary">Redeem</button>
+                </div>
+              </form>
+            </div>
+
+
+
+            <div class="col-md-7 col-lg-8">
+              <h3 class="mb-3"></h3>
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Apellido*</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="yo@ejemplo.com">
+                    <div class="invalid-feedback">
+                      Por favor ingrese un correo electrónico válido
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="address" class="form-label">Sexo</label>
+                    <select class="form-select" id="state" required>
+                      <option value="">Elegir...</option>
+                      <option>Masculino</option>
+                      <option>Femenino</option>
+                      <option>Otro</option>
+                    </select>
+                    <div class="invalid-feedback">
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="state" class="form-label">Provincia</label>
+                    <select class="form-select" id="state" required>
+                      <option value="">Elegir...</option>
+                      <option>Buenos Aires</option>
+                      <option>Capital Federal</option>
+                      <option>Catamarca</option>
+                      <option>Chaco</option>
+                      <option>Chubut</option>
+                      <option>Córdoba</option>
+                      <option>Corrientes</option>
+                      <option>Entre Ríos</option>
+                      <option>Formosa</option>
+                      <option>Jujuy</option>
+                      <option>La Pampa</option>
+                      <option>La Rioja</option>
+                      <option>Mendoza</option>
+                      <option>United</option>
+                      <option>Misiones</option>
+                      <option>Neuquén</option>
+                      <option>Río Negro</option>
+                      <option>Salta</option>
+                      <option>San Juan</option>
+                      <option>San Luis</option>
+                      <option>Santa Cruz</option>
+                      <option>Santa Fe</option>
+                      <option>Santiago del Estero</option>
+                      <option>Tierra del Fuego</option>
+                      <option>Tucumán</option>
+                    </select>
+                    <div class="invalid-feedback">
+
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="col-md-12">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Choose...</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                    <option>United</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+
+                <hr class="my-4">
+
+
+                <a class="w-100 btn btn-primary btn-lg" target="blank" href="/registroOK.html">Registrarse</a>
+
+              </form>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <div class="row">
+            <div class="col-12">
+              <footer class="text-muted text-center text-small">
+                <p class="mb-1">&copy; 2017–2021 Interfaz Gráfica</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">Privacy</a></li>
+                  <li class="list-inline-item"><a href="#">Terms</a></li>
+                  <li class="list-inline-item"><a href="#">Support</a></li>
+                </ul>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="form-validation.js"></script>
+</body
